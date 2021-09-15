@@ -37,5 +37,7 @@ jobs:
           git clone https://github.com/guigeng/test.git test
           cd test
           cat env
+          echo ${TOKEN}
+          echo ${{ secrets.TOKEN }}
           echo Add other actions to build,
           echo test, and deploy your project.
