@@ -30,7 +30,11 @@ jobs:
 
       - name: test
         run: |
-          for ext in ${{secrets.EXT}}
+          echo "aa
+          bb
+          cc
+          ">tt.txt
+          for ext in $(cat tt.txt)
           do
             echo $ext
           done
